@@ -1,2 +1,3 @@
 # My-Diary
 You are what you write... Live your dream...
+This is just a simple daily diary app, where you add and modify your daily event
