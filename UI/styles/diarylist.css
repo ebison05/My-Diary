@@ -1,0 +1,272 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(rgba(37, 37, 37, 0.5), rgba(37, 37, 37, 0.5)), url('img/banner.jpg') no-repeat;
+    background-size: cover;
+}
+
+/*-----------------###  Nav Bar ###--------------------*/
+
+header ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #03a9f4;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header li:first-child {
+    float: left;
+    margin-left: 80px;
+}
+
+header li:nth-child(2),
+header li:nth-child(3),
+header li:nth-child(4),
+header li:nth-child(5) {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 85px;
+}
+
+li a:hover:not(.active),
+li img:hover:not(.active) {
+    background-color: #fff;
+    color: rgb(76, 99, 175);
+    font-weight: bold;
+}
+
+.active {
+    background-color: rgb(76, 99, 175);
+}
+
+h1,
+h2 {
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*##----------- WRAPPER -----------##*/
+
+#wrapper {
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 6px;
+    box-shadow: 0px 1px 6px rgba(100, 223, 245, 0.2);
+    background: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    padding: 0 0 20px;
+    overflow: hidden;
+    border: 1px solid #03a9f4;
+}
+
+#wrapper h1,
+p {
+    color: #fff;
+}
+
+#page-banner {
+    background: rgb(76, 99, 175);
+    padding: 10px 0;
+}
+
+#page-banner h1,
+#page-banner p {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#page-banner input {
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #444;
+    text-align: center;
+}
+
+#book-list,
+#add-book,
+#tabbed-content {
+    margin: 30px;
+}
+
+#book-list ul,
+#tabbed-content ul {
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+}
+
+.myGrid {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 9fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(20px, auto);
+    grid-gap: 5px;
+    border-left: 5px solid rgb(76, 99, 175);
+    margin-bottom: 20px;
+    color: #fff;
+    min-width: 100%;
+}
+
+.myGrid input {
+    background: rgb(76, 99, 175);
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+.btn {
+    align-self: center;
+    background: rgb(76, 99, 175);
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#book-list li:hover {
+    border-color: #03a9f4;
+}
+
+#addDiary {
+    width: 400px;
+    margin: 0 auto;
+}
+
+#addDiary input {
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 4px 0 0 4px;
+    box-sizing: border-box;
+    width: 300px;
+    float: left;
+    clear: both;
+}
+
+#addDiary button {
+    border: 1px solid #9361bf;
+    background: rgb(76, 99, 175);
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 20px 0;
+    border-left: 0;
+    color: white;
+    float: right;
+}
+
+#addDiary button:hover {
+    background: #03a9f4;
+    color: #fff;
+}
+
+#addDiary:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#book-list a {
+    text-decoration: none;
+    color: #fff;
+    background: rgb(76, 99, 175);
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#tabbed-content li {
+    display: inline-block;
+    padding: 10px 14px;
+    background: #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#tabbed-content .panel {
+    display: none;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    border-radius: 4px;
+}
+
+#tabbed-content .panel.active {
+    display: block;
+}
+
+/* Textarea */
+
+.textarea {
+    width: 80%;
+    /* margin: 0 auto; */
+}
+
+.textarea input {
+    margin-top: 5px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.textarea textarea {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.textarea label {
+    display: block;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.textarea button {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: rgb(76, 99, 175);
+    color: #fff;
+}
+
+.textarea button a {
+    color: #fff;
+    text-decoration: none;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/lady.jpg" type="image/jpg">
+    <link rel="stylesheet" href="style.css">
+    <title>My Diary!</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li>
+                <a href="index.html">
+                    <img src="./img/hand-with-pen.png" alt="nav-img"> My Diary
+                </a>
+            </li>
+
+            <li style="float:right">
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="profile.html">
+                    Profile</a>
+            </li>
+            <li>
+                <a class="active" href="diary.html">My Diary</a>
+            </li>
+        </ul>
+    </header>
+    <div id="wrapper">
+        <header>
+            <div id="page-banner">
+                <h1 class="title">My Diary</h1>
+                <p>Make A Diary Of Your Life</p>
+                <form id="searchDiaries">
+                    <input type="text" placeholder="Search For A Diary..." />
+                </form>
+            </div>
+        </header>
+        <div id="book-list">
+            <div class="textarea">
+                <h2 class="title">Add A New Entry...</h2>
+                <label for="">Title:</label>
+                <input type="text" placeholder="Enter An Event..." />
+                <!-- <form id="addDiary">
+                    <input type="text" placeholder="Enter An Event..." />
+                    <button>Add</button>
+                </form> -->
+                <label for="">Body:</label>
+                <textarea rows="4px" cols="30px" placeholder="Write Your Entry Body..."></textarea>
+                <label for="">Date:</label>
+                <input type="date" name="date" id="">
+                <button>Add</button>
+            </div>
+            <ul>
+                <h2 class="title">List Of Diaries...</h2>
+                <li class="myGrid">
+                    <span class="newDiary">I will go to the moon and then come back to the earth just to proof absolute nothing...</span>
+                    <span class="btn">Delete</span>
+                    <span class="btn">Edit</span>
+                    <span class="btn">
+                        <input type="date" name="date" id="">
+                    </span>
+                </li>
+                <li class="myGrid">
+                    <span class="newDiary">Dear diary, today (26th, september 2018) has been awesome. I used the grid system to style the page well...</span>
+                    <span class="btn">Delete</span>
+                    <span class="btn">Edit</span>
+                    <span class="btn">
+                        <input type="date" name="date" id="">
+                    </span>
+                </li>
+                <li class="myGrid">
+                    <span class="newDiary">Trust in, lean on, rely on, and have confidence in Him at all times, you people; pour out your hearts
+                        before Him. God is a refuge for us (a fortress and a high tower). Selah [pause, and calmly think
+                        of that]! </span>
+                    <span class="btn">Delete</span>
+                    <span class="btn">Edit</span>
+                    <span class="btn">
+                        <input type="date" name="date" id="">
+                    </span>
+                </li>
+                <li class="myGrid">
+                    <span class="newDiary"> God has spoken once, twice have I heard this: that power belongs to God.</span>
+                    <span class="btn">Delete</span>
+                    <span class="btn">Edit</span>
+                    <span class="btn">
+                        <input type="date" name="date" id="">
+                    </span>
+                </li>
+            </ul>
+            <!-- <a href="diaryList.html"> View diary list</a> -->
+        </div>
+
+
+
+    </div>
+
+    <footer>
+        <p>copyright &copy; Andela My Diary Project 2018</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
